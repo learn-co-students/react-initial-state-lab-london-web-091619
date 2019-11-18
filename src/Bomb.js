@@ -9,8 +9,8 @@ export default class Bomb extends Component {
   }
   generateRatingElement = () => {
     // debugger
-    if(this.props.initialCount > 0){
-    return  <div>{this.props.initialCount} seconds left before I go boom!</div>
+    if(this.state.secondsLeft > 0){
+    return  <div>{this.state.secondsLeft} seconds left before I go boom!</div>
     }else{
       return 'Boom!'
     }
